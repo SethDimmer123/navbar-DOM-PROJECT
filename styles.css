@@ -198,13 +198,16 @@ nav {
 .social-icons {
   display: none;
 }
-.links {
-  /* height: 0;
-  overflow: hidden;
-  transition: var(--transition); */
+.links { /*links when not open (by default)*/
+   height: 0;
+   overflow: hidden; 
+   transition: var(--transition);  
+   /*var stands for variable*/
 }
-.show-links {
-  height: 10rem;
+.show-links { /*this shows up when the links are open*/
+  /*manually i can add this class to html ul class of links <ul class="links show-links">  */
+  height: 10rem; /*160px*/
+  /* 1rem is equal to 16px */
 }
 @media screen and (min-width: 800px) {
   .nav-center {
